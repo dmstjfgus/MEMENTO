@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- Rimix Icon Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="shorcut icon" href="/MEMENTO/images/logo_w.svg" />
+    <link rel="apple-touch-icon" href="/MEMENTO/images/logo_w.svg" />
+
+    <!-- Main Style Sheet Link -->
+    <link rel="stylesheet" href="/MEMENTO/css/style.css" />
+    <link rel="stylesheet" href="/MEMENTO/css/sign.css" />
+    <link rel="stylesheet" href="/MEMENTO/css/media.css" />
+  </head>
+  <body>
+    <!-- Header include -->
+    <div id="header-wrapper" class="header-wrapper" role="header"></div>
+
+    <div class="sign-wrapper">
+      <div class="sign-container">
+        <h2 class="sign-title">SIGN UP</h2>
+        <form onsubmit="return false;">
+          <p>
+            <input type="text" placeholder="이름" name="name" class="name" />
+          </p>
+          <p><input type="text" placeholder="아이디" name="id" class="id" /></p>
+          <p>
+            <input
+              type="email"
+              placeholder="이메일"
+              name="email"
+              class="email"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              placeholder="비밀번호"
+              name="pwd"
+              class="pwd"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              placeholder="비밀번호확인"
+              name="rpwd"
+              class="rpwd"
+            />
+          </p>
+          <p class="send-btn"><input type="submit" value="회원 가입하기" /></p>
+          <input type="hidden" value="signup" name="req_sign" />
+          <span class="sign-line"></span>
+          <p class="sign-msg">
+            "이미 회원이세요? | "
+            <a href="/MEMENTO/pages/sign-in.html">로그인하기</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery Frmework -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include Files -->
+    <script src="/MEMENTO/js/include.js"></script>
+
+    <!-- Main Script -->
+    <script src="/MEMENTO/js/admin/signup.js"></script>
+    <script src="/MEMENTO/js/main.js"></script>
+    <script src="/MEMENTO/js/admin/login.js"></script>
+  </body>
+</html>

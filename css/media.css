@@ -1,0 +1,41 @@
+@media screen and (max-width:900px) {
+    .nav-wrap, .sign-wrap , .close, .user-login {display: none;}
+    .mobile-nav {display: flex; align-items: center; color: #fff; font-size: 30px;}
+    .mobile-wrapper {display: flex;}
+    .mobile-user {display: flex; justify-content: center;}
+    .signout {display: flex; justify-content: end;}
+    .user-login, .user-logout {display: flex; align-items: center; padding: 0 .5rem; font-size: 30px;}
+    .user-logout a {font-size: 20px;}
+
+    .logo a {display: flex; align-items: center;}
+
+    .mobile-nav.active {width: 200px; height: 100vh; background: black; display: block; position: fixed; top: 0; right: 0; z-index: 1000;}
+    .mobile-nav.active .ham, .mobile-nav.active .user  {display: none;}
+
+    .mobile-nav.active .close {display: flex; justify-content: flex-end; font-size: 30px; padding: 2rem 1rem;}
+    .mobile-nav.active .nav-wrap {display: flex; flex-direction: column; justify-content: center; font-size: 16px; padding: 0 1em;}
+    .mobile-nav.active .nav-wrap .nav-lists {text-align: end; gap: .5rem; flex-direction: column;}
+
+    .chap-container .image-box {padding: 2rem;}
+    .chap-container .title-box {padding: 2rem 1rem;}
+    
+    .acc-wrap .acc-small-boxs {flex-direction: column; position: relative; top: 5rem;}
+    .acc-wrap .acc-small-boxs .small-box {width: 100vw; height: 15vh;}
+    .acc-wrap .acc-small-boxs .small-box.active {width: 100vw; height: 62vh;}
+    .acc-wrap .content-wrap {border: 1px solid #fff;}
+}
+
+@media screen and (max-width:450px) {
+    .header-wrap .header .container {padding: 1rem 1rem 1rem .5rem;}
+    .header-wrap .container .logo {width: 80px;}
+    .header-wrap .container .logo a {display: flex; justify-content: center;}
+
+    .mobile-nav {display: flex;}
+
+    .chap-container {display: block;}
+
+    .chap-container .image-box {width: 80%;}
+    .chap-container .image-box img {margin-top: 7rem;}
+
+    .chap-container .title-box {width: 80%; text-align: center;}
+}

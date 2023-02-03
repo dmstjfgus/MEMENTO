@@ -3,6 +3,8 @@ ol,ul,a {list-style: none; text-decoration: none; color: #fff;}
 html {scroll-behavior: smooth; background: rgb(15, 15, 15);}
 
 /* header */
+.mobile-nav {display: none;}
+.mobile-wrapper {display: none;}
 .header-wrap {width: 100%; height: auto; background: black; position: fixed; z-index: 1000;}
 .header-wrap .header {width: 100%; display: flex; justify-content: center; position: fixed; z-index: 1000;background: black;}
 .header-wrap .header .container {display: flex; justify-content: space-between; align-items: center; padding: 1rem; width: 100%; max-width: 1280px;}
@@ -15,24 +17,20 @@ html {scroll-behavior: smooth; background: rgb(15, 15, 15);}
 .header-wrap .nav-wrap .nav-lists > li > a:hover, .header-wrap .nav-wrap .nav-lists > li:hover  {color: #a0b3ce;}
 _.header-wrap .nav-wrap .nav-lists > li.active {border-bottom: 2px solid #fff;}
 
-.header-wrap .sign-wrap {display: flex; padding: .5rem; column-gap: 1rem; align-items: center; cursor: pointer;}
-.header-wrap .sign-wrap > li {column-gap: .5rem;}
-.header-wrap .sign-wrap > li.sign {border: 2px solid; padding: .3rem .5rem .35rem;}
-.header-wrap .sign-wrap > li.sign:hover {background: #222;}
+.header-wrap .sign-container {display: flex; padding: .5rem; column-gap: 1rem; align-items: center; cursor: pointer;}
+.header-wrap .sign-container > li {column-gap: .5rem;}
+.header-wrap .sign-container > li.sign {border: 2px solid; padding: .3rem .5rem .35rem; border-radius: .5rem;}
+.header-wrap .sign-container > li.sign:hover {background: #222;}
 
-/* accordion */
+/* Content accordion */
 .acc-wrap {width: 100%; height: 100%; display: flex; justify-content: center;}
 .acc-wrap .acc-small-boxs {width: 100%; max-width: 1280px; height: 100%; display: flex; justify-content: flex-end;}
-.acc-wrap .acc-small-boxs .small-box {width: 200px; height: 100vh; background: #555; transition: all 2s;}
-/* .acc-wrap .acc-small-boxs .small-box.part1 {background: #444;}
-.acc-wrap .acc-small-boxs .small-box.part2 {background: #555;}
-.acc-wrap .acc-small-boxs .small-box.part3 {background: #777;}
-_.acc-wrap .acc-small-boxs .small-box.part4 {background: #999;} */
+.acc-wrap .acc-small-boxs .small-box {width: 210px; height: 100vh; background: #555; transition: all 2s;}
 .acc-wrap .acc-small-boxs .small-box.active {width: 60vw;}
 
-.acc-wrap .content-wrap {height: 100%;}
+.acc-wrap .content-wrap {height: 100%; overflow: hidden;}
 .acc-wrap .content-wrap > a {position: relative; width: 100%; height: 100%; display: block;}
-.acc-wrap .content-wrap > a > img {width: 100%; height: 100%; position: absolute;}
+.acc-wrap .content-wrap > a > img {width: 100%; height: 100%; position: absolute; object-fit: cover;}
 
 .acc-wrap .content-wrap > a > p {color: #00113A; font-size: 80px; text-align: right; padding: 2rem; position: absolute; _margin: 10rem 2rem 0 16rem; top: 10rem; left: 3rem;}
 .acc-wrap .content-wrap.part3 > a > p {color: #E4E4E4;;}
@@ -47,10 +45,10 @@ _.acc-wrap .acc-small-boxs .small-box.part4 {background: #999;} */
 
 /*가운데서 좌우로 펼쳐지는 라인 에니메이션*/
 .spread-underline {
-    color: #333;
+    /* color: #333; */
     text-decoration: none;
     display: inline-block;
-    padding: 15px 0;
+    padding: 15px 0 10px;
     position: relative;
   }
   .spread-underline:after {    
@@ -71,13 +69,14 @@ _.acc-wrap .acc-small-boxs .small-box.part4 {background: #999;} */
   }
 
   /* chapter1 Style */
-.chap-container {width: 100%; max-width: 1280px; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; margin: auto;}
-.chap-container .image-box {width: 600px; margin-top: 7rem;}
-.chap-container .image-box img {width: 100%; padding: 1rem; border: 1px solid #fff; _border-radius: .5rem;}
+.chap-container {width: 100%; max-width: 1280px; height: 100vh; display: flex; justify-content: center; align-items: center; margin: auto;}
+.chap-container .image-box {width: 50%; margin: auto; padding: 7rem 5rem 7rem 9rem;}
+.chap-container .image-box img {width: 100%; padding: 1rem; border: 1px solid #fff;}
 
-.chap-container .title-box {width: 100%; max-width: 1280px; text-align: center; color: #fff; padding: 2rem 0;}
-.chap-container .title-box h4 {width: 100%; font-size: 26px; margin: 2rem;}
-.chap-container .title-box p {width: 100%; max-width: 1280px; font-size: 16px; padding: 1rem; line-height: 2rem;}
+.chap-container .title-box {width: 50%; color: #fff; padding: 2rem 0; margin: auto;}
+.chap-container .title-box h4 {width: 100%; font-size: 26px; padding: 1rem 0;}
+.chap-container .title-box p {width: 100%; font-size: 16px; padding: 1rem 0; line-height: 2rem;}
+
 
 
 
